@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-25-26",
+  "version": "1.0.0",
+  "description": "Raquib Alam's Portfolio Website - Full Stack Application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm start",
+    "build": "npm run server:build && npm run client:build",
+    "server:build": "cd server && npm run build",
+    "client:build": "cd client && npm run build",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "start": "cd server && npm start"
+  },
+  "keywords": ["portfolio", "react", "nodejs", "typescript", "fullstack"],
+  "author": "Raquib Alam",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
